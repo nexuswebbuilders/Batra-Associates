@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Batra & Associates | Luxury Builders Delhi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d0d0d;
+color:#eaeaea;
+font-family:'Poppins',sans-serif;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+}
+
+section{
+padding:80px 8%;
+}
+
+.gold{
+background:linear-gradient(90deg,#C6A75E,#D4AF37,#B8962E);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* NAV */
+
+nav{
+position:fixed;
+width:100%;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+nav h2{
+font-size:18px;
+}
+
+nav a{
+color:#eaeaea;
+text-decoration:none;
+margin-left:15px;
+font-size:14px;
+}
+
+nav a:hover{
+color:#C6A75E;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url('https://images.jdmagicbox.com/v2/comp/delhi/u8/011pxx11.xx11.121003131730.x9u8/catalogue/batra-associates-delhi-1lpna7lgik.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero p{
+margin:15px 0;
+color:#ccc;
+}
+
+.btn{
+padding:10px 25px;
+border:1px solid #C6A75E;
+color:#C6A75E;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
+}
+
+.btn:hover{
+background:#C6A75E;
+color:#000;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:#121212;
+padding:25px;
+border:1px solid #222;
+transition:0.3s;
+}
+
+.card:hover{
+border:1px solid #C6A75E;
+transform:translateY(-8px);
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* REELS */
+
+.reel-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.reel{
+background:#121212;
+padding:10px;
+border-radius:12px;
+border:1px solid #222;
+transition:0.3s;
+}
+
+.reel:hover{
+border:1px solid #C6A75E;
+transform:translateY(-6px);
+}
+
+/* TESTIMONIALS */
+
+.testimonial{
+margin-bottom:20px;
+font-style:italic;
+}
+
+.testimonial span{
+display:block;
+margin-top:5px;
+font-style:normal;
+color:#C6A75E;
+}
+
+/* CONTACT */
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+background:#121212;
+border:1px solid #333;
+color:#fff;
+}
+
+.contact button{
+width:100%;
+padding:12px;
+background:#C6A75E;
+border:none;
+color:#000;
+cursor:pointer;
+font-weight:500;
+}
+
+/* WHATSAPP FLOAT */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:12px 18px;
+border-radius:50px;
+text-decoration:none;
+font-size:14px;
+}
+
+/* FADE ANIMATION */
+
+.fade-in{
+opacity:0;
+transform:translateY(30px);
+transition:all 0.8s ease;
+}
+
+.fade-in.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+.hero h1{
+font-size:32px;
+}
+nav{
+flex-direction:column;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2 class="gold">Batra & Associates</h2>
+<div>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#reels">Properties</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1 class="gold">Luxury Living Crafted in Delhi</h1>
+<p>Builders • Interior Designers • Property Consultants</p>
+<p><a href="tel:9810059090" style="color:#C6A75E;text-decoration:none;">📞 9810059090</a></p>
+<a href="#contact" class="btn">Book Consultation</a>
+</section>
+
+<section id="services">
+<h2 class="gold">Our Services</h2>
+<div class="services">
+<div class="card fade-in">
+<h3>Builders</h3>
+<p>Premium residential construction with high-end finishing.</p>
+</div>
+<div class="card fade-in">
+<h3>Interior Design</h3>
+<p>Elegant and modern interiors tailored for luxury living.</p>
+</div>
+<div class="card fade-in">
+<h3>Property Consultant</h3>
+<p>Reliable property consultation across Delhi.</p>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="gold">Our Office</h2>
+<div class="gallery">
+<img src="https://images.jdmagicbox.com/v2/comp/delhi/u8/011pxx11.xx11.121003131730.x9u8/catalogue/batra-associates-delhi-1b3yexl7b8.jpg">
+<img src="https://images.jdmagicbox.com/v2/comp/delhi/u8/011pxx11.xx11.121003131730.x9u8/catalogue/batra-associates-delhi-1lpna7lgik.jpg">
+<img src="https://images.jdmagicbox.com/v2/comp/delhi/u8/011pxx11.xx11.121003131730.x9u8/catalogue/batra-associates-delhi-1ki4vw1vwt.jpg">
+</div>
+</section>
+
+<section id="reels">
+<h2 class="gold">Featured Properties</h2>
+<div class="reel-grid">
+<div class="reel fade-in">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C4Dc2fDSbUw/" data-instgrm-version="14"></blockquote>
+</div>
+<div class="reel fade-in">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DU8QO9ED_MP/" data-instgrm-version="14"></blockquote>
+</div>
+<div class="reel fade-in">
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQuGOIAD4Ov/" data-instgrm-version="14"></blockquote>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="gold">Client Testimonials</h2>
+<div class="testimonial fade-in">
+“Extremely easy to communicate and very professional.”
+<span>- Rajesh Sharma</span>
+</div>
+<div class="testimonial fade-in">
+“Dedicated honest professionals who know their job well.”
+<span>- Anjali Mehta</span>
+</div>
+<div class="testimonial fade-in">
+“Classic interiors and top notch finishing quality.”
+<span>- Amit Verma</span>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="gold">Contact Us</h2>
+<p><a href="tel:9810059090" style="color:#C6A75E;text-decoration:none;">📞 9810059090</a></p>
+<br>
+
+<form onsubmit="sendToWhatsApp(event)">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="text" id="phone" placeholder="Your Mobile Number" required>
+<textarea rows="4" id="requirement" placeholder="Your Requirement" required></textarea>
+<button type="submit">Submit Enquiry</button>
+</form>
+
+<br><br>
+
+<div style="width:100%;height:350px;">
+<iframe width="100%" height="100%" style="border:0;border-radius:8px;"
+src="https://www.google.com/maps?q=28.6412341,77.0710123&output=embed"></iframe>
+</div>
+</section>
+
+<footer>
+© 2026 Batra & Associates | Delhi, India
+</footer>
+
+<a href="https://wa.me/919810059090" class="whatsapp">Chat on WhatsApp</a>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+<script>
+function sendToWhatsApp(e){
+e.preventDefault();
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let requirement=document.getElementById("requirement").value;
+
+let message=`Hello Batra & Associates,%0A%0AName: ${name}%0AMobile: ${phone}%0ARequirement: ${requirement}`;
+window.open(`https://wa.me/919810059090?text=${message}`,'_blank');
+}
+
+const faders=document.querySelectorAll('.fade-in');
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+faders.forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
