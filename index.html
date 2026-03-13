@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Batra & Associates | Luxury Builders Delhi</title>
+<title>Batra & Associates – Luxury Builders & Property Consultants in Vikaspuri, Delhi</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -80,7 +80,7 @@ justify-content:center;
 }
 
 .hero h1{
-font-size:50px;
+font-size:48px;
 }
 
 .hero p{
@@ -211,24 +211,11 @@ text-decoration:none;
 font-size:14px;
 }
 
-/* FADE ANIMATION */
-
-.fade-in{
-opacity:0;
-transform:translateY(30px);
-transition:all 0.8s ease;
-}
-
-.fade-in.show{
-opacity:1;
-transform:translateY(0);
-}
-
 /* MOBILE */
 
 @media(max-width:768px){
 .hero h1{
-font-size:32px;
+font-size:30px;
 }
 nav{
 flex-direction:column;
@@ -260,15 +247,15 @@ flex-direction:column;
 <section id="services">
 <h2 class="gold">Our Services</h2>
 <div class="services">
-<div class="card fade-in">
+<div class="card">
 <h3>Builders</h3>
 <p>Premium residential construction with high-end finishing.</p>
 </div>
-<div class="card fade-in">
+<div class="card">
 <h3>Interior Design</h3>
 <p>Elegant and modern interiors tailored for luxury living.</p>
 </div>
-<div class="card fade-in">
+<div class="card">
 <h3>Property Consultant</h3>
 <p>Reliable property consultation across Delhi.</p>
 </div>
@@ -287,13 +274,13 @@ flex-direction:column;
 <section id="reels">
 <h2 class="gold">Featured Properties</h2>
 <div class="reel-grid">
-<div class="reel fade-in">
+<div class="reel">
 <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C4Dc2fDSbUw/" data-instgrm-version="14"></blockquote>
 </div>
-<div class="reel fade-in">
+<div class="reel">
 <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DU8QO9ED_MP/" data-instgrm-version="14"></blockquote>
 </div>
-<div class="reel fade-in">
+<div class="reel">
 <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQuGOIAD4Ov/" data-instgrm-version="14"></blockquote>
 </div>
 </div>
@@ -301,15 +288,15 @@ flex-direction:column;
 
 <section>
 <h2 class="gold">Client Testimonials</h2>
-<div class="testimonial fade-in">
+<div class="testimonial">
 “Extremely easy to communicate and very professional.”
 <span>- Rajesh Sharma</span>
 </div>
-<div class="testimonial fade-in">
+<div class="testimonial">
 “Dedicated honest professionals who know their job well.”
 <span>- Anjali Mehta</span>
 </div>
-<div class="testimonial fade-in">
+<div class="testimonial">
 “Classic interiors and top notch finishing quality.”
 <span>- Amit Verma</span>
 </div>
@@ -346,23 +333,21 @@ src="https://www.google.com/maps?q=28.6412341,77.0710123&output=embed"></iframe>
 <script>
 function sendToWhatsApp(e){
 e.preventDefault();
-let name=document.getElementById("name").value;
-let phone=document.getElementById("phone").value;
-let requirement=document.getElementById("requirement").value;
 
-let message=`Hello Batra & Associates,%0A%0AName: ${name}%0AMobile: ${phone}%0ARequirement: ${requirement}`;
-window.open(`https://wa.me/919810059090?text=${message}`,'_blank');
-}
+const name=document.getElementById("name").value.trim();
+const phone=document.getElementById("phone").value.trim();
+const requirement=document.getElementById("requirement").value.trim();
 
-const faders=document.querySelectorAll('.fade-in');
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add('show');
+const message=`Hello Batra & Associates,
+
+Name: ${name}
+Mobile: ${phone}
+Requirement: ${requirement}`;
+
+const encodedMessage=encodeURIComponent(message);
+
+window.location.href=`https://wa.me/919810059090?text=${encodedMessage}`;
 }
-});
-});
-faders.forEach(el=>observer.observe(el));
 </script>
 
 </body>
